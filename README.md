@@ -9,3 +9,5 @@ Currently this is still Alpha, so once you have the code installed (see the HOWT
 ![Data Analysis](screenshots/analysis.png)
 ![Active Users](screenshots/active-users.png)
 ![Dashboard](screenshots/dashboard.png)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NSP7V6447468L)
