@@ -4,8 +4,6 @@ This module leverages the SPA module for persistence, then uses Autobahn to main
 
 Currently this is still Alpha, so once you have the code installed (see the HOWTO) you will need to apply for access by visiting the [LiveStats Admin Site](https://livestats.iflexrts.uk:8001) with a valid Google account, then emailing gareth at linux.co.uk quoting both your google email address and the site's URL.
 
-[HOWTO and code will appear shortly]
-
 ## Screenshots
 
 ![Data Analysis](screenshots/analysis.png)

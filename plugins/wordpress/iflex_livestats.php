@@ -1,7 +1,13 @@
 <?php
-/*
-Plugin Name: iFlexRTS LiveStats
-*/
+/**
+ * Plugin Name: iFlexRTS LiveStats
+ * Plugin URI: https://github.com/oddjobz/livestats
+ * Description: Real Time Analytics for your Wordpress site
+ * Version: 0.9.0
+ * Author: Gareth Bult
+ * Author URI: https://gareth.bult.co.uk
+ * License: MIT
+ */
 
 function inject_livestats() {
     wp_enqueue_script(
