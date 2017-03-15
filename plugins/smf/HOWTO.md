@@ -3,7 +3,7 @@
 In your forum folder, add a sum-folder called "iflex" and add to it the three ".js" files
 from this project and from the SPA project.
 
-Now move to the "Themes/<your theme>" folder and locate the line;
+Now move to the "Themes/your theme" folder and locate the line;
 ```html
 <link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/rtl.css" />';
 ```
