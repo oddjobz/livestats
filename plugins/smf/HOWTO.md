@@ -1,4 +1,4 @@
-###For now this is a manual installation.
+##For now this is a manual installation.
 
 In your forum folder, add a sum-folder called "iflex" and add to it the three ".js" files
 from this project and from the SPA project.
@@ -28,5 +28,5 @@ if($user['is_logged']) {
 };
 //
 ```
-####Note; if you're already using jQuery on your forum for some third party product, you may need
+#### Note; if you're already using jQuery on your forum for some third party product, you may need
 to remove the line above that includes jQuery 3.1.
