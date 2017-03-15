@@ -28,5 +28,6 @@ if($user['is_logged']) {
 };
 //
 ```
-### Note; if you're already using jQuery on your forum for some third party product, you may need
+### Note;
+if you're already using jQuery on your forum for some third party product, you may need
 to remove the line above that includes jQuery 3.1.
