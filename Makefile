@@ -1,4 +1,4 @@
-JS=js/iflex.js js/autobahn_min.js js/iflex_spa.js
+JS=js/iflex.js js/iflex_spa.js
 PHP=plugins/wordpress/iflex_livestats.php plugins/wordpress/readme.txt
 ZIP=dist/wordpress_livestats.zip
 TMP=dist/tmp

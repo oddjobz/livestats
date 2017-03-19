@@ -2,7 +2,7 @@
 //
 //  iflex.js
 //  (c) Gareth Bult 2017
-//  MIT License
+//  License: GPLv2 or later
 //
 //  Depends on: jQuery, iflex_spa
 //
