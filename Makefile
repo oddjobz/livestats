@@ -1,13 +1,17 @@
-dist/wordpress_livestats.zip: plugins/wordpress/iflex_livestats.php plugins/wordpress/readme.txt js/iflex.js js/autobahn_min.js
-	@rm -f dist/wordpress_livestats.zip
-	@mkdir -p dist/tmp
-	@cp -r js dist/tmp
-	@cp plugins/wordpress/iflex_livestats.php dist/tmp    
-	@cp plugins/wordpress/readme.txt dist/tmp    
-	@cd dist/tmp; zip -r wordpress_livestats.zip iflex_livestats.php readme.txt js/*
-	@cd dist/tmp; mv wordpress_livestats.zip ..
-	@rm -rf dist/tmp
+JS=js/iflex.js js/autobahn_min.js js/iflex_spa.js
+PHP=plugins/wordpress/iflex_livestats.php plugins/wordpress/readme.txt
+ZIP=dist/wordpress_livestats.zip
+TMP=dist/tmp
+
+dist/wordpress_livestats.zip: ${PHP} ${JS}
+	@rm -f ${ZIP}
+	@mkdir -p ${TMP}
+	@cp -r js ${TMP}
+	@cp ${PHP} ${TMP}
+	@cd ${TMP}; zip -r wordpress_livestats.zip iflex_livestats.php readme.txt js/*
+	@cd ${TMP}; mv wordpress_livestats.zip ..
+	@rm -rf ${TMP}
 
 clean:
-	@rm -f dist/wordpress_livestats.zip
-	@rm -rf dist/tmp
+	@rm -f ${ZIP}
+	@rm -rf ${TMP}

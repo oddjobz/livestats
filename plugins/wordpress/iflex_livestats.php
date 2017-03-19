@@ -3,13 +3,18 @@
  * Plugin Name: iFlexRTS LiveStats
  * Plugin URI: https://github.com/oddjobz/livestats
  * Description: Real Time Analytics for your Wordpress site
- * Version: 0.9.0
+ * Version: 0.9.1
  * Author: Gareth Bult
  * Author URI: https://gareth.bult.co.uk
  * License: MIT
  */
 
 function inject_livestats() {
+    wp_enqueue_script(
+        'load_iflex_spa',
+        plugins_url('js/iflex_spa.js', __FILE__),
+        array('jquery')
+    );  
     wp_enqueue_script(
         'load_autobahn',
         plugins_url('js/autobahn_min.js', __FILE__),
@@ -22,7 +27,6 @@ function inject_livestats() {
     );  
 }
 add_action('wp_enqueue_scripts', inject_livestats);
-
 
 function inject_livestats_auth() {
     if ( is_user_logged_in() ) {
