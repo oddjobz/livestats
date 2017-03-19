@@ -7,18 +7,17 @@
  * Author: Gareth Bult
  * Author URI: https://gareth.bult.co.uk
  * License: GPLv2 or later
- */
-defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+  */
 
 function inject_livestats() {
     wp_enqueue_script(
-        'load_autobahn',
-        '//autobahn.s3.amazonaws.com/autobahnjs/latest/autobahn.min.js',
-        array('jquery')
-    );
-    wp_enqueue_script(
         'load_iflex_spa',
         plugins_url('js/iflex_spa.js', __FILE__),
+        array('jquery')
+    );  
+    wp_enqueue_script(
+        'load_autobahn',
+        plugins_url('js/autobahn.min.js', __FILE__),
         array('jquery')
     );  
     wp_enqueue_script(
