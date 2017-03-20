@@ -127,6 +127,7 @@ jQuery(function() {
                 case 'text':
                     var url, htag, head, body, hscripts, bscripts,
                     node = document.createElement("html");
+                    window.onload = null;   // make sure this is clear for things like SMF
                     node.innerHTML = data;
                     head = node.getElementsByTagName("head")[0];
                     document.title = jQuery(head).find('title').text(); 
@@ -140,11 +141,7 @@ jQuery(function() {
                     jQuery("body").html(body.innerHTML);
                     [url,htag] = href.split('#');
                     set_position(tag,htag);
-                    //
-                    //  TODO: you may need this, let me know! Some Wordpress sliders
-                    //  seem to want this, SMF it seems does not!
-                    //
-                    //setTimeout(function(){jQuery(window).trigger('load');},250);
+                    setTimeout(function(){jQuery(window).trigger('load');},100);
                     break;
                 case 'application':
                 case 'image':
