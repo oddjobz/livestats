@@ -1,4 +1,4 @@
-# Real-Time Analtics for webservers
+# Real-Time Analytics for webservers
 
 This module leverages the SPA module for persistence, then uses Autobahn to maintain a persistent connection to a Crossbar.io server which record client activity in real time. (this is the client / browser module only)
 
