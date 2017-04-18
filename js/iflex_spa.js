@@ -79,7 +79,7 @@ jQuery(function() {
         jQuery.each(scripts, function() { 
             var script = document.createElement('script'), node = target.lastChild;
             if(this.src) {
-                script.type = 'text/javascript';
+                script.type = this.type;
                 script.src = this.src;
             } else {
                 script.innerHTML = this.innerHTML;

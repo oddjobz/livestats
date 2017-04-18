@@ -85,6 +85,7 @@ var iFlexObject = iFlexObject||{
         };
         var close = function(reason, details) {
             _this.session = null;
+            _this.channel = 'url';
             switch(reason) {
                 case 'closed':
                     _this.debug('Close [no retry] :: {d}'.format({d:details.reason}));
